@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-16T19:31:27Z",
+  "python": "3.13.15",
+  "tensorflow": "2.21.0",
+  "keras": "3.13.2",
+  "note": "Pin the SAME tensorflow/keras versions in the backend requirements.",
+  "building_id": "Hog_office_Rolando",
+  "selected_model": "Ensemble",
+  "ensemble_members": [
+    "lstm",
+    "mlp",
+    "transformer"
+  ],
+  "latest_observation": "2017-12-31 23:00:00",
+  "latest_forecast_origin": "2018-01-01 00:00:00",
+  "files": [
+    "__pycache__/powerpulse_pipeline.cpython-313.pyc",
+    "best_hyperparameters.json",
+    "config/pipeline_config.json",
+    "data/error_profile.json",
+    "data/hourly_building_data.csv",
+    "data/latest_forecast.csv",
+    "data/profiles.json",
+    "data/test_predictions_daily.csv",
+    "data_quality.json",
+    "figures/01_demand_timeline.png",
+    "figures/02_model_comparison.png",
+    "figures/03_training_curves.png",
+    "figures/04_actual_vs_predicted.png",
+    "figures/05_error_by_lead_time.png",
+    "metrics.json",
+    "models/lstm.keras",
+    "models/mlp.keras",
+    "models/transformer.keras",
+    "powerpulse_pipeline.py",
+    "scalers/feature_scaler.pkl",
+    "scalers/target_scaler.pkl",
+    "training_history.json",
+    "tuning_log.csv"
+  ]
+}

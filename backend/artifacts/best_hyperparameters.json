@@ -1,0 +1,25 @@
+{
+  "mlp": {
+    "units": [
+      256,
+      128
+    ],
+    "dropout": 0.3,
+    "lr": 0.0005
+  },
+  "lstm": {
+    "u1": 64,
+    "u2": 32,
+    "dense": 64,
+    "dropout": 0.1,
+    "lr": 0.001
+  },
+  "transformer": {
+    "d_model": 64,
+    "heads": 2,
+    "blocks": 1,
+    "ff": 128,
+    "dropout": 0.1,
+    "lr": 0.001
+  }
+}

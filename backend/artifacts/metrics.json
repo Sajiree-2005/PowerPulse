@@ -1,0 +1,205 @@
+{
+  "project": "PowerPulse",
+  "dataset": "Building Data Genome Project 2 (BDG2) - cleaned electricity, hourly",
+  "dataset_url": "https://github.com/buds-lab/building-data-genome-project-2",
+  "building_id": "Hog_office_Rolando",
+  "site_id": "Hog",
+  "input_hours": 168,
+  "horizon": 24,
+  "best_model": "Ensemble",
+  "selection_criterion": "lowest validation RMSE (test set never used for selection)",
+  "peak_threshold_kwh": 489.0,
+  "models": {
+    "Baseline (previous day)": {
+      "MAE": 11.027948128273923,
+      "RMSE": 20.307073935469408,
+      "sMAPE": 2.5547421754560395,
+      "CVRMSE": 4.78356359866732,
+      "NMBE": 0.06551900562795318,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    },
+    "Baseline (previous week)": {
+      "MAE": 9.545962693241345,
+      "RMSE": 17.885374204947542,
+      "sMAPE": 2.228125844959568,
+      "CVRMSE": 4.213104520484076,
+      "NMBE": 0.23958678183405063,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    },
+    "LSTM": {
+      "MAE": 8.48052069031637,
+      "RMSE": 15.839853156879773,
+      "sMAPE": 1.9677420387652744,
+      "CVRMSE": 3.7312586348119896,
+      "NMBE": 0.2859653863065705,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    },
+    "MLP": {
+      "MAE": 8.307076115912924,
+      "RMSE": 16.496905503400104,
+      "sMAPE": 1.9143062116235818,
+      "CVRMSE": 3.8860348323686345,
+      "NMBE": 0.19810360476327613,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    },
+    "Transformer": {
+      "MAE": 8.27872149729759,
+      "RMSE": 15.687630065923601,
+      "sMAPE": 1.9203482146614148,
+      "CVRMSE": 3.6954007441533703,
+      "NMBE": 0.32796996792030153,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    },
+    "Ensemble": {
+      "MAE": 7.832480479788518,
+      "RMSE": 15.272146799307356,
+      "sMAPE": 1.8133827788140413,
+      "CVRMSE": 3.5975289071591976,
+      "NMBE": 0.270679652996716,
+      "peak_precision": 0.0,
+      "peak_recall": 0.0,
+      "peak_f1": 0.0
+    }
+  },
+  "validation": {
+    "Baseline (previous day)": {
+      "MAE": 13.196339593714066,
+      "RMSE": 19.25128443030973,
+      "sMAPE": 3.0398005573149374,
+      "CVRMSE": 4.489241343471111,
+      "NMBE": 0.054782342046047115,
+      "peak_precision": 0.5934539190353144,
+      "peak_recall": 0.6059806508355321,
+      "peak_f1": 0.5996518711923411
+    },
+    "Baseline (previous week)": {
+      "MAE": 11.943800306630893,
+      "RMSE": 15.987819462051212,
+      "sMAPE": 2.7417729314701376,
+      "CVRMSE": 3.728228128404293,
+      "NMBE": 0.5820893843738416,
+      "peak_precision": 0.5414012738853503,
+      "peak_recall": 0.5980650835532102,
+      "peak_f1": 0.5683242791475135
+    },
+    "LSTM": {
+      "MAE": 8.731030458486511,
+      "RMSE": 11.652984755129955,
+      "sMAPE": 2.016421960547978,
+      "CVRMSE": 2.7173802936080937,
+      "NMBE": 0.031258191429177774,
+      "peak_precision": 0.7259732360097324,
+      "peak_recall": 0.6997947815889768,
+      "peak_f1": 0.7126436781609196
+    },
+    "MLP": {
+      "MAE": 8.543376078267896,
+      "RMSE": 11.527960338609857,
+      "sMAPE": 1.9675285795158766,
+      "CVRMSE": 2.6882256269874234,
+      "NMBE": 0.04503345927860071,
+      "peak_precision": 0.7095282146160962,
+      "peak_recall": 0.6745822339489885,
+      "peak_f1": 0.6916140667267808
+    },
+    "Transformer": {
+      "MAE": 8.591603981811213,
+      "RMSE": 11.711425158058363,
+      "sMAPE": 1.985948341961264,
+      "CVRMSE": 2.7310081153726644,
+      "NMBE": -0.2323128453230385,
+      "peak_precision": 0.726530612244898,
+      "peak_recall": 0.6783934330108473,
+      "peak_f1": 0.7016373559733172
+    },
+    "Ensemble": {
+      "MAE": 8.142868974774988,
+      "RMSE": 11.05684679079218,
+      "sMAPE": 1.877502437732082,
+      "CVRMSE": 2.5783658187243113,
+      "NMBE": -0.05200706487175332,
+      "peak_precision": 0.7401524777636594,
+      "peak_recall": 0.6830841395485195,
+      "peak_f1": 0.7104741576459828
+    }
+  },
+  "rmse_improvement_vs_previous_day_pct": {
+    "LSTM": 21.998347929324037,
+    "MLP": 18.762764365644337,
+    "Transformer": 22.747954157379812,
+    "Ensemble": 24.793956786495876
+  },
+  "interval_80_test_coverage": 0.8311453941484604,
+  "split_sizes": {
+    "train": 12089,
+    "val": 2609,
+    "test": 2609
+  },
+  "model_files": {
+    "lstm": "models/lstm.keras",
+    "mlp": "models/mlp.keras",
+    "transformer": "models/transformer.keras"
+  },
+  "config_file": "config/pipeline_config.json",
+  "pipeline_module": "powerpulse_pipeline.py",
+  "data_quality": {
+    "dataset": "Building Data Genome Project 2 (BDG2) - cleaned electricity, hourly",
+    "dataset_url": "https://github.com/buds-lab/building-data-genome-project-2",
+    "citation": "Miller et al., Scientific Data 7, 368 (2020), doi:10.1038/s41597-020-00712-x",
+    "building_id": "Hog_office_Rolando",
+    "site_id": "Hog",
+    "primary_use": "Office",
+    "square_feet": 194111,
+    "rows_hourly_grid": 17544,
+    "date_range": [
+      "2016-01-01 00:00:00",
+      "2017-12-31 23:00:00"
+    ],
+    "latest_observation": "2017-12-31 23:00:00",
+    "missing_hours_raw": 1,
+    "missing_hours_after_short_gap_fill": 0,
+    "missing_pct_raw": 0.006,
+    "gap_runs_remaining": 0,
+    "weather_features": [
+      "air_temperature",
+      "dew_temperature",
+      "wind_speed",
+      "sea_level_pressure",
+      "precip_depth_1_hr"
+    ],
+    "weather_missing_pct": {
+      "air_temperature": 0.0,
+      "dew_temperature": 0.0,
+      "wind_speed": 0.0,
+      "sea_level_pressure": 0.0,
+      "precip_depth_1_hr": 0.0
+    },
+    "split": {
+      "train": [
+        "2016-01-01 00:00:00",
+        "2017-05-26 15:00:00"
+      ],
+      "val": [
+        "2017-05-26 16:00:00",
+        "2017-09-13 07:00:00"
+      ],
+      "test": [
+        "2017-09-13 08:00:00",
+        "2017-12-31 23:00:00"
+      ]
+    },
+    "input_hours": 168,
+    "horizon": 24,
+    "cleaning": "negatives->missing; interior gaps <=6h linearly interpolated; longer gaps kept missing and their windows excluded"
+  }
+}

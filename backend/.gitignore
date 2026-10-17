@@ -1,0 +1,1 @@
+.venv/\n__pycache__/\n*.py[cod]\n.env\nartifacts/*.keras\nartifacts/*.joblib\n

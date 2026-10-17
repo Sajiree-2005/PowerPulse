@@ -1,0 +1,50 @@
+{
+  "dataset": "Building Data Genome Project 2 (BDG2) - cleaned electricity, hourly",
+  "dataset_url": "https://github.com/buds-lab/building-data-genome-project-2",
+  "citation": "Miller et al., Scientific Data 7, 368 (2020), doi:10.1038/s41597-020-00712-x",
+  "building_id": "Hog_office_Rolando",
+  "site_id": "Hog",
+  "primary_use": "Office",
+  "square_feet": 194111,
+  "rows_hourly_grid": 17544,
+  "date_range": [
+    "2016-01-01 00:00:00",
+    "2017-12-31 23:00:00"
+  ],
+  "latest_observation": "2017-12-31 23:00:00",
+  "missing_hours_raw": 1,
+  "missing_hours_after_short_gap_fill": 0,
+  "missing_pct_raw": 0.006,
+  "gap_runs_remaining": 0,
+  "weather_features": [
+    "air_temperature",
+    "dew_temperature",
+    "wind_speed",
+    "sea_level_pressure",
+    "precip_depth_1_hr"
+  ],
+  "weather_missing_pct": {
+    "air_temperature": 0.0,
+    "dew_temperature": 0.0,
+    "wind_speed": 0.0,
+    "sea_level_pressure": 0.0,
+    "precip_depth_1_hr": 0.0
+  },
+  "split": {
+    "train": [
+      "2016-01-01 00:00:00",
+      "2017-05-26 15:00:00"
+    ],
+    "val": [
+      "2017-05-26 16:00:00",
+      "2017-09-13 07:00:00"
+    ],
+    "test": [
+      "2017-09-13 08:00:00",
+      "2017-12-31 23:00:00"
+    ]
+  },
+  "input_hours": 168,
+  "horizon": 24,
+  "cleaning": "negatives->missing; interior gaps <=6h linearly interpolated; longer gaps kept missing and their windows excluded"
+}
