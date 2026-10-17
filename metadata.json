@@ -1,0 +1,6 @@
+{
+  "name": "PowerPulse - Building Energy Demand Forecasting",
+  "description": "AI-powered building energy intelligence platform forecasting electricity demand, peak risk detection with LSTM & MLP, and explainable early warnings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
