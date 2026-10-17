@@ -14,8 +14,7 @@ By combining time-series deep learning with an interactive analytics dashboard, 
 | **Backend API** | https://powerpulse-fd34.onrender.com |
 | **API Health Check** | https://powerpulse-fd34.onrender.com/api/v1/health |
 | **Interactive API Documentation** | https://powerpulse-fd34.onrender.com/docs |
-| **GitHub Repository** | https://github.com/Sajiree-2005/PowerPulse |
-| **Dataset** | [ASHRAE — Great Energy Predictor III](https://www.kaggle.com/competitions/ashrae-energy-prediction) |
+| **Dataset** | [Building Data Genome Project 2](https://www.kaggle.com/datasets/claytonmiller/buildingdatagenomeproject2) |
 
 > The backend health endpoint currently reports that the LSTM, MLP, and Transformer models are loaded and that demo mode is disabled. Actual forecast generation also depends on compatible historical data and successful inference.
 
