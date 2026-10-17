@@ -10,7 +10,7 @@ By combining time-series deep learning with an interactive analytics dashboard, 
 
 | Resource | Link |
 |---|---|
-| **Live Application** | [PowerPulse]https://power-pulse-five.vercel.app/ |
+| **Live Application** | [PowerPulse](https://power-pulse-five.vercel.app/) |
 | **Backend API** | https://powerpulse-fd34.onrender.com |
 | **API Health Check** | https://powerpulse-fd34.onrender.com/api/v1/health |
 | **Interactive API Documentation** | https://powerpulse-fd34.onrender.com/docs |
